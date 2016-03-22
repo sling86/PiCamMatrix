@@ -1,3 +1,8 @@
+#!/bin/sh
+
+chmod +x ./*.sh
+chmod +x ./init.d/cam*
+
 sudo apt-get update
 sudo apt-get -y install screen omxplayer
 
@@ -14,3 +19,10 @@ sudo update-rc.d camcentreRight defaults
 sudo update-rc.d cambottomLeft defaults
 sudo update-rc.d cambottomCentre defaults
 sudo update-rc.d cambottomRight defaults
+
+sudo service cammainCam start
+sudo service camtopRight start
+sudo service camcentreRight start
+sudo service cambottomLeft start
+sudo service cambottomCentre start
+sudo service cambottomRight start

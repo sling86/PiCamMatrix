@@ -1,0 +1,6 @@
+mainCam=rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov
+topRight=rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov
+centreRight=rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov
+bottomLeft=rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov
+bottomCentre=rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov
+bottomRight=rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov

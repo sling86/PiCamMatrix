@@ -1,4 +1,0 @@
-topleft=<rtsp_url_using_ip>
-topright=<rtsp_url_using_ip>
-bottomleft=<rtsp_url_using_ip>
-bottomright=<rtsp_url_using_ip>

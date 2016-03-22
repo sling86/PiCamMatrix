@@ -1,10 +1,10 @@
 #!/bin/sh
 ##Assign location of this script to variable
 ##Used to restart script after connection is lost
-position=topleft
-Script=/home/pi/PiCamMatrix/$position.sh
-pid_file=/var/run/camtopleft.omx.pid
-screen -dmS $position sh -c "omxplayer --win '0 0 960 540'  --live $(cat /home/pi/PiCamMatrix/cams.txt | grep -o 'topleft.*' | cut -f2- -d'=')"
+position=mainCam
+Script=/home/pi/TPiCamMatrix/$position.sh
+pid_file=/var/run/cammainCam.omx.pid
+screen -dmS $position sh -c "omxplayer --win '0 0 1280 720' --live $(cat /home/pi/TPiCamMatrix/tCams.txt | grep -o 'mainCam.*' | cut -f2- -d'=')"
 
 ##Find PID of omxplayer.bin
 #The brackets "[ ]" around the n prevent grep from returning itself

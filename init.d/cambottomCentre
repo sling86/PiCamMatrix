@@ -1,26 +1,27 @@
 #!/bin/sh
 ### BEGIN INIT INFO
-# Provides:          camtopleft
+# Provides:          cambottomCentre
 # Required-Start:    $local_fs $network $named $time $syslog
 # Required-Stop:     $local_fs $network $named $time $syslog
 # Default-Start:     2 3 4 5
 # Default-Stop:      0 1 6
-# Description:       Top Left Camera
+# Description:       Bottom Centre Camera
 ### END INIT INFO
 
-SCRIPT=/home/pi/PiCamMatrix/topleft.sh
+SCRIPT=/home/pi/TPiCamMatrix/bottomCentre.sh
 RUNAS=root
 
-PIDFILE=/var/run/camtopleft.pid
-OMXPID=/var/run/camtopleft.omx.pid
-LOGFILE=/var/log/camtopleft.log
+PIDFILE=/var/run/cambottomCentre.pid
+OMXPID=/var/run/cambottomCentre.omx.pid
+LOGFILE=/var/log/cambottomCentre.log
 
 start() {
   if [ -f /var/run/$PIDNAME ] && kill -0 $(cat /var/run/$PIDNAME); then
     echo 'Service already running' >&2
     return 1
   fi
-  echo 'Starting service…' >&2
+  echo 'Starting service 10 sec delay…' >&2
+  sleep 10
   local CMD="$SCRIPT &> \"$LOGFILE\" & echo \$!"
   su -c "$CMD" $RUNAS > "$PIDFILE"
   echo 'Service started' >&2
@@ -45,7 +46,7 @@ uninstall() {
     stop
     rm -f "$PIDFILE"
     echo "Notice: log file is not be removed: '$LOGFILE'" >&2
-    update-rc.d -f camtopleft remove
+    update-rc.d -f cambottomCentre remove
     rm -fv "$0"
   fi
 }
