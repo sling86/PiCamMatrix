@@ -21,7 +21,11 @@
 `cd TPiCamMatrix/; nano tCams.txt`
 
 7. Run:
-`sudo ln -s /home/pi/TPiCamMatrix/init.d/cammainCam /etc/init.d/cammainCam; sudo ln -s /home/pi/TPiCamMatrix/init.d/camtopRight /etc/init.d/camtopRight; sudo ln -s /home/pi/TPiCamMatrix/init.d/camcentreRight /etc/init.d/camcentreRight; sudo ln -s /home/pi/TPiCamMatrix/init.d/cambottomLeft /etc/init.d/cambottomLeft; sudo ln -s /home/pi/TPiCamMatrix/init.d/cambottomCentre /etc/init.d/cambottomCentre; sudo ln -s /home/pi/TPiCamMatrix/init.d/cambottomRight /etc/init.d/cambottomRight`
+```
+sudo ln -s /home/pi/TPiCamMatrix/init.d/cammainCam /etc/init.d/cammainCam; sudo ln -s /home/pi/TPiCamMatrix/init.d/camtopRight /etc/init.d/camtopRight; sudo ln -s /home/pi/TPiCamMatrix/init.d/camcentreRight /etc/init.d/camcentreRight; sudo ln -s /home/pi/TPiCamMatrix/init.d/cambottomLeft /etc/init.d/cambottomLeft; sudo ln -s /home/pi/TPiCamMatrix/init.d/cambottomCentre /etc/init.d/cambottomCentre; sudo ln -s /home/pi/TPiCamMatrix/init.d/cambottomRight /etc/init.d/cambottomRight
+```
 
 8. Run:
-`sudo update-rc.d cammainCam defaults; sudo update-rc.d camtopRight defaults; sudo update-rc.d camcentreRight defaults; sudo update-rc.d cambottomLeft defaults; sudo update-rc.d cambottomCentre defaults; sudo update-rc.d cambottomRight defaults`
+```
+sudo update-rc.d cammainCam defaults; sudo update-rc.d camtopRight defaults; sudo update-rc.d camcentreRight defaults; sudo update-rc.d cambottomLeft defaults; sudo update-rc.d cambottomCentre defaults; sudo update-rc.d cambottomRight defaults
+```
