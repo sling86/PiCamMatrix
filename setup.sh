@@ -20,9 +20,9 @@ sudo update-rc.d cambottomLeft defaults
 sudo update-rc.d cambottomCentre defaults
 sudo update-rc.d cambottomRight defaults
 
-sudo service cammainCam start
-sudo service camtopRight start
-sudo service camcentreRight start
-sudo service cambottomLeft start
-sudo service cambottomCentre start
-sudo service cambottomRight start
+read -p "Reboot? Yes/No? " -n 1 -r
+echo    # (optional) move to a new line
+if [[ $REPLY =~ ^[Yy]$ ]]
+then
+    sudo reboot
+fi
