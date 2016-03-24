@@ -1,6 +1,6 @@
-mainCam=rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov
-topRight=rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov
-centreRight=rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov
-bottomLeft=rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov
-bottomCentre=rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov
-bottomRight=rtsp://184.72.239.149/vod/mp4:BigBuckBunny_115k.mov
+mainCam=rtsp://192.168.0.21:7447/157d18ee-9dc2-3344-a74b-8cdcb563d20a_0
+topRight=rtsp://192.168.0.21:7447/7745d5c9-2254-3b7d-bf04-725c92840c17_2
+centreRight=rtsp://192.168.0.21:7447/ee239d74-f6ae-3798-bd0f-0e7226acec88_2
+bottomLeft=rtsp://192.168.0.21:7447/76d7de13-b687-3c4f-bf02-6ba6c5854639_2
+bottomCentre=rtsp://192.168.0.21:7447/1e943a1b-2e65-332e-85a3-6d4d7ee829ee_2
+bottomRight=rtsp://192.168.0.21:7447/41fbec0e-ee99-3522-87b8-385f6e3f91d3_2
