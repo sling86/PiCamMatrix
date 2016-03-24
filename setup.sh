@@ -20,9 +20,9 @@ sudo update-rc.d cambottomLeft defaults
 sudo update-rc.d cambottomCentre defaults
 sudo update-rc.d cambottomRight defaults
 
-read -p "Reboot? Yes/No? " -n 1 -r
-echo    # (optional) move to a new line
-if [[ $REPLY =~ ^[Yy]$ ]]
-then
-    sudo reboot
-fi
+read -p "Reboot now [y/n]? " choice
+case "$choice" in
+  y|Y ) echo "Rebooting... "; sudo reboot;;
+  n|N ) echo "Ok but the cameras will not load until you do! ";;
+  * ) echo "Invalid!";;
+esac
